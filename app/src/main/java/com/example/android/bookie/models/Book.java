@@ -3,13 +3,13 @@ package com.example.android.bookie.models;
 public class Book {
 
     private String title;
-    private String description;
+    private String authors;
     private String publisher;
     private String publishedDate;
 
-    public Book(String title, String description, String publisher, String publishedDate){
+    public Book(String title, String authors, String publisher, String publishedDate){
         this.title = title;
-        this.description = description;
+        this.authors = authors;
         this.publisher = publisher;
         this.publishedDate = publishedDate;
 
@@ -23,12 +23,12 @@ public class Book {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getAuthors() {
+        return authors;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setAuthors(String authors) {
+        this.authors = authors;
     }
 
     public String getPublisher() {
@@ -51,10 +51,10 @@ public class Book {
     public String toString() {
 
         StringBuilder builder = new StringBuilder();
-        builder.append("title: " + getTitle())
-                .append("\n description: " + getDescription())
-                .append("\n publisher: " + getPublishedDate())
-                .append("\n date of publication: " + getPublishedDate());
+        builder.append("\ntitle: " + getTitle())
+                .append("\n authors: " + getAuthors())
+                .append("\n publisher: " + getPublisher())
+                .append("\n date of publication: " + getPublishedDate() + "\n");
 
         return builder.toString();
     }
