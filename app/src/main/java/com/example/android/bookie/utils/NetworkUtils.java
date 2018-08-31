@@ -142,7 +142,11 @@ public class NetworkUtils {
 
                     String publishedDate = volumeInfo.getString("publishedDate");
 
-                    Book books = new Book(title, authors, publisher, publishedDate);
+                    JSONObject photoUrls = volumeInfo.getJSONObject("imageLinks");
+
+                    String photoUrl = photoUrls.getString("thumbnail");
+
+                    Book books = new Book(title, authors, publisher, publishedDate, photoUrl);
                     // Log the contents of the Book object
                     Log.e(LOG_TAG, "\nBook Details" + books.toString());
                     // Add Book object to array list

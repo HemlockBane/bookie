@@ -4,8 +4,11 @@ public class Book {
 
     private String title;
     private String authors;
+    private String photoUrl;
     private String publisher;
     private String publishedDate;
+
+
 
     public Book(String title, String authors, String publisher, String publishedDate){
         this.title = title;
@@ -13,6 +16,22 @@ public class Book {
         this.publisher = publisher;
         this.publishedDate = publishedDate;
 
+    }
+    public Book(String title, String authors, String publisher, String publishedDate, String photoUrl){
+        this.title = title;
+        this.authors = authors;
+        this.publisher = publisher;
+        this.publishedDate = publishedDate;
+        this.photoUrl = photoUrl;
+
+    }
+
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
+
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
     }
 
     public String getTitle() {
