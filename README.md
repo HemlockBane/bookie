@@ -7,4 +7,8 @@ This app displays a list of books using the Google Books API
 * Android Support Repository v27.0.0
 
 ## Getting Started
+### Build
 This sample uses the Gradle build system. To build this project, use the "gradlew build" command or use "Import Project" in Android Studio.
+
+### Glide
+This sample uses the Glide library to load images.
