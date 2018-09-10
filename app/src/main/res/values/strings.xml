@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Bookie</string>
+    <string name="no_data_found">No data found</string>
+    <string name="no_internet_connection">No internet connection</string>
 </resources>

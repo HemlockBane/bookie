@@ -144,7 +144,7 @@ public class NetworkUtils {
 
                     JSONObject photoUrls = volumeInfo.getJSONObject("imageLinks");
 
-                    String photoUrl = photoUrls.getString("thumbnail");
+                    String photoUrl = photoUrls.getString("smallThumbnail");
 
                     Book books = new Book(title, authors, publisher, publishedDate, photoUrl);
                     // Log the contents of the Book object
